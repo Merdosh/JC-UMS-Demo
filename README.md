@@ -9,8 +9,8 @@ Due to the nature of the JC Groep activities prior to my hiring the assignment i
 
 All documents in this branch are (or at least should be) created, maintained and modified by:
 #Robert van Leeuwen
-#JC Groep - Capacity, 
+e-mail: r.vanleeuwen@jcgroep.nl
+#JC Groep - Capacity 
 Rotterdam, The Netherlands
-r.vanleeuwen@jcgroep.nl
 
 If there are any questions, or project requests concerning this code or the ideas therein, one can feel free to use the above e-mail on the provision that I may take a little while to respond, might I be busy working on billable projects. I have a very easy policy: Those who are patient will be rewarded, those who nag will be discarded. I prefer rhymes, they last longer.
