@@ -1,5 +1,3 @@
-
-
 class UMSFile {
 	private:
 		
@@ -47,7 +45,7 @@ class User: public Person {
 	
 }
 
-class SystemConfig: public Configuration {
+class SystemConfig: virtual public Configuration {
 	private:
 	
 	protected:
@@ -57,12 +55,31 @@ class SystemConfig: public Configuration {
 	
 }
 
-class DatabaseConfig: public Configuration {
+class DatabaseConfig: virtual public Configuration {
 	private:
 	
 	protected:
 	
 	public:
 	
+}
+
+class Page: public UMSFile {
+	private:
+
+	protected:
+
+	public:
+
+}
+
+class MenuWindow: virtual public Page {
+	private:
+
+	protected:
+
+	public:
+
+
 }
 
