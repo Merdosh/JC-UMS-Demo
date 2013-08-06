@@ -33,7 +33,18 @@ UMSFile::Store()
 
 UMSFile::Store(LocationType_t Location)
 {
-
+	LocationType_t backup = this->Location;
+	
+	/* 
+	   Because we want it to be possible for later, more complicated, 
+	   procedures to refer to the internal Location without bugs, the
+	   decision is made to temporarily change the file's location to the
+	   given and then invoke the standard Load/Store routine. This 
+	   avoids future code duplication requirements.
+	*/
+	this->Location = Location;
+	this->Store();
+	this->Location = backup;
 }
 
 UMSFile::Load()
@@ -43,7 +54,18 @@ UMSFile::Load()
 
 UMSFile::Load(LocationType_t Location)
 {
-
+	LocationType_t backup = this->Location;
+	
+	/* 
+	   Because we want it to be possible for later, more complicated, 
+	   procedures to refer to the internal Location without bugs, the
+	   decision is made to temporarily change the file's location to the
+	   given and then invoke the standard Load/Store routine. This 
+	   avoids future code duplication requirements.
+	*/
+	this->Location = Location;
+	this->Load();
+	this->Location = backup;	
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
