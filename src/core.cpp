@@ -19,7 +19,11 @@ class Person : public UMSFile {
 }
 
 class Configuration: public UMSFile {
+	private:
 
+	protected:
+
+	public:
 
 }
 
